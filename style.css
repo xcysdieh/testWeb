@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*控制滚动容器,变得平滑*/
+    scroll-padding-top: 55px;
+    /*设置内容不会被导航栏覆盖*/
+}
+
+body {
+    background-color: rgb(243, 240, 238);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: myfont;
+    color: rgb(189, 151, 94);
+    text-align: center;
+    padding: 30px 0;
+    text-decoration: underline rgb(205, 180, 180) solid 4px;
+    
+}
+
+/* --------顶部图片-------- */
+.head {
+    width: 100%;
+    height: 210px;
+    background-size: cover;
+    /* 确保背景图片（即图片）按比例缩放以填充容器。 */
+    background-repeat: no-repeat;
+    /* 防止图片重复 */
+    background-position: center;
+    /* 设置图片居中 */
+    padding: 52px 0 1px;
+}
+
+.head img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+    object-fit: cover;
+    /* 保持元素的宽高比，并确保元素完全覆盖其容器。
+    可能会导致元素的部分内容被裁剪，以适应容器的尺寸。 */
+}
+
+/* --------顶部图片-------- */
+/* --------导航栏-------- */
+.nav {
+    height: 50px;
+    background-color: rgb(235, 221, 219);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.nav li {
+    float: left;
+    /* 向左浮动 */
+    line-height: 50px;
+    /* 设置文字在父元素中垂直居中 */
+    list-style: none;
+    /* 去除项目符号 */
+}
+
+.nav a {
+    display: block;
+    /* 转为块元素 */
+    color: rgb(239, 146, 25);
+    text-decoration: none;
+    /* 去除下横线 */
+    font-size: 18px;
+    padding: 0 64px;
+}
+
+/* 设置鼠标移动到时的背景色跟颜色 */
+.nav a:hover {
+    background-color: rgb(132, 105, 102);
+    color: aliceblue;
+}
+
+/* --------导航栏-------- */
+/* -------内容------*/
+.content {
+    height: 600px;
+    /* border: 3px red solid; */
+    position: relative;
+    /*开启相对定位*/
+    margin: 20px 0;
+    padding: 10px 0;
+    border: 1px rgb(141, 132, 132) solid;
+    background-color: rgb(245, 237, 225);
+}
+
+/* ---故事简介--- */
+.pp {
+    width: 470px;
+    text-align: justify;
+    /*--文本两端对齐*/
+    text-indent: 2em;
+    line-height: 1.8;
+    /*--行距--*/
+    padding: 30px 30px 10px;
+
+}
+
+.bo1 {
+    width: 400px;
+    position: absolute;
+    /*开启绝对定位*/
+    right: 50px;
+    top: 200px
+}
+
+.bo1 img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10%;
+    box-shadow: 5px 5px rgb(219, 195, 174);
+    /* 设置阴影效果 */
+}
+
+/* ---故事简介 作者--- */
+.pd {
+    width: 460px;
+    text-align: justify;
+    line-height: 1.7;
+    padding: 20px 30px;
+}
+
+.bo2 {
+    position: absolute;
+    /*开启绝对定位*/
+    left: 590px;
+    top: 160px;
+}
+
+.bo2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    /*设置圆角*/
+    
+}
+
+
+
+
+/* ---作者  人物分析 */
+.bo3 {
+    width: 400px;
+    padding: 1px 30px;
+}
+
+.bo3 img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px rgb(208, 204, 204) double;
+    /*设置圆角--边框--阴影*/
+}
+
+.bp1 {
+    position: absolute;
+    /*开启绝对定位*/
+    left: 60px;
+    top: 90px
+}
+
+
+.bp2 {
+    position: absolute;
+    left: 270px;
+    top: 190px
+}
+
+.bp3 {
+    position: absolute;
+    left: 100px;
+    top: 360px
+}
+
+.bp4 {
+    width: 470px;
+    text-align: justify;
+    line-height: 2;
+    position: absolute;
+    /*开启绝对定位*/
+    left: 480px;
+    top: 110px
+}
+
+/* --人物分析 语录--*/
+.pt1 {
+    width: 350px;
+    text-align: justify;
+    line-height: 2;
+    position: absolute;
+    left: 600px;
+    top: 90px
+}
+
+.pt2 {
+    width: 560px;
+    text-align: justify;
+    line-height: 1.7;
+    position: absolute;
+    left: 30px;
+    top: 380px;
+}
+
+
+.bo4 img {
+    width: 200px;
+    height: 300px;
+    border: 3px rgb(22, 230, 22) double;
+}
+
+.bb1 {
+    position: absolute;
+    left: 100px;
+    top: 60px
+}
+
+.bb2 {
+    position: absolute;
+    left: 650px;
+    top: 290px
+}
+.b11{
+    position: absolute;
+    left: 70px;
+    top: 15px
+}
+.b12{
+    position: absolute;
+    left: 640px;
+    top: 285px
+}
+
+
+/* ---结尾--- */
+
+.bs1 {
+    width: 250px;
+    text-align: justify;
+    line-height: 2;
+    /* 两端对齐，行距2 */
+    position: absolute;
+    left: 400px;
+    top: 100px
+}
+
+.bs2 {
+    width: 250px;
+    text-align: justify;
+    line-height: 2;
+    position: absolute;
+    left: 100px;
+    top: 400px
+}
+
+.bs3 {
+    width: 250px;
+    text-align: justify;
+    line-height: 2;
+    position: absolute;
+    left: 700px;
+    top: 350px
+}
+
+.bo5 img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.bn4 {
+    position: absolute;
+    left: 400px;
+    top: 350px
+}
+
+.bn5 {
+    position: absolute;
+    left: 100px;
+    top: 100px
+}
+
+.bn6 {
+    position: absolute;
+    left: 700px;
+    top: 100px
+}
+footer {
+    height: 20px;
+    margin: 20px 0;
+}
+footer a {
+    color: rgb(54, 47, 47);
+    text-decoration: none;
+    /* 去除下横线 */
+    font-size: 16px;
+}
+/* -------内容---- */
+
+
+
+/* ----动画 ----*/
+.bo1{
+   background-size: cover;
+   background-repeat: no-repeat;
+   animation: scale 2s infinite;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.bo2 {
+    animation: flipY 3s linear infinite;
+  }
+  
+  @keyframes flipY {
+    0% {
+      transform: perspective(800px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(800px) rotateY(360deg);
+    }
+  }
+
+
+.bp1 img{
+animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+    form{transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}.bp2 img{
+    animation: rotate 3s infinite linear;
+    }
+    @keyframes rotate{
+        form{transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    .bp3 img{
+        animation: rotate 3s infinite linear;
+        }
+        @keyframes rotate{
+            form{transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
